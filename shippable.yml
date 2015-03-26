@@ -8,5 +8,3 @@ go:
 before_install:
   - export GOPATH=$SHIPPABLE_GOPATH
   - source $HOME/.gvm/scripts/gvm
-  - gvm install go$SHIPPABLE_GO_VERSION
-  - gvm use go$SHIPPABLE_GO_VERSION
