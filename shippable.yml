@@ -1,0 +1,5 @@
+  #language setting
+language: go
+  #version numbers
+go: 
+  -1.4
