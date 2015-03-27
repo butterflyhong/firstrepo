@@ -12,3 +12,6 @@ before_install:
   - gvm use go$SHIPPABLE_GO_VERSION
 before_script:
   - source set_go_path.sh
+  - mkdir -p shippable
+  - mkdir -p shippable/testresults
+  - mkdir -p shippable/codecoverage
