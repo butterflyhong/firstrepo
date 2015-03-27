@@ -7,3 +7,7 @@
 [submodule "go/src/github.com/mattn/go-colorable"]
 	path = go/src/github.com/mattn/go-colorable
 	url = https://github.com/mattn/go-colorable
+[submodule "go/src/github.com/flosch/pongo2"]
+	path = go/src/github.com/flosch/pongo2
+	url = https://github.com/flosch/pongo2
+	
