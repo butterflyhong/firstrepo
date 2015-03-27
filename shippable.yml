@@ -10,3 +10,5 @@ before_install:
   - source $HOME/.gvm/scripts/gvm
   - gvm install go$SHIPPABLE_GO_VERSION
   - gvm use go$SHIPPABLE_GO_VERSION
+before_script:
+  - ./set_go_path.sh
