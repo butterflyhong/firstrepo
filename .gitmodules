@@ -10,4 +10,3 @@
 [submodule "go/src/github.com/flosch/pongo2"]
 	path = go/src/github.com/flosch/pongo2
 	url = https://github.com/flosch/pongo2
-	
