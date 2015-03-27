@@ -1,6 +1,7 @@
 package main
 
 import (
+	"github.com/gin-gonic/gin"
 	"html/template"
 	"net/http"
 	"strconv"
@@ -39,4 +40,20 @@ func main() {
 	http.HandleFunc("/view/", viewHandler)
 	http.HandleFunc("/edit/", editHandler)
 	http.ListenAndServe(":8080", nil)
+
+	r := gin.Default()
+	r.GET("/user/:name", func(c *gin.Context) {
+		name := c.Params.ByName("name")
+		message := "Hello " + name
+		c.String(http.StatusOK, message)
+	})
+
+	r.GET("/user/:name/*action", func(c *gin.Context) {
+		name := c.Params.ByName("name")
+		action := c.Params.ByName("action")
+		message := name + " is " + action
+		c.String(http.StatusOK, message)
+	})
+
+	r.Run(":8081")
 }
