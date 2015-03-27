@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 echo Setting GOPATH ...
-DIR=`pwd`/go
+CURDIR=`pwd`
+DIR="$CURDIR""/go"
+echo $DIR
 if [ "$DIR" != "$GOPATH" ]
 then
     export OLDGOPATH="$GOPATH"
