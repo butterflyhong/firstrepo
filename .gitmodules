@@ -1,3 +1,9 @@
 [submodule "go/src/github.com/gin-gonic/gin"]
 	path = go/src/github.com/gin-gonic/gin
 	url = https://github.com/gin-gonic/gin
+[submodule "go/src/github.com/julienschmidt/httprouter"]
+	path = go/src/github.com/julienschmidt/httprouter
+	url = https://github.com/julienschmidt/httprouter
+[submodule "go/src/github.com/mattn/go-colorable"]
+	path = go/src/github.com/mattn/go-colorable
+	url = https://github.com/mattn/go-colorable

@@ -37,9 +37,11 @@ func init() {
 }
 
 func main() {
-	http.HandleFunc("/view/", viewHandler)
-	http.HandleFunc("/edit/", editHandler)
-	http.ListenAndServe(":8080", nil)
+	/*
+		http.HandleFunc("/view/", viewHandler)
+		http.HandleFunc("/edit/", editHandler)
+		http.ListenAndServe(":8080", nil)
+	*/
 
 	r := gin.Default()
 	r.GET("/user/:name", func(c *gin.Context) {
