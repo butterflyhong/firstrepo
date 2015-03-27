@@ -1,4 +1,5 @@
 archive: true
+cache: true
   #image
 build_image: shippableimages/ubuntu1204_go  
   #language setting
