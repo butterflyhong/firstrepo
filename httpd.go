@@ -50,7 +50,7 @@ func main() {
 		c.String(http.StatusOK, message)
 	})
 
-	s.GET("/user/:name/*action", func(c *gin.Context) {
+	r.GET("/user/:name/*action", func(c *gin.Context) {
 		name := c.Params.ByName("name")
 		action := c.Params.ByName("action")
 		message := name + " is " + action
